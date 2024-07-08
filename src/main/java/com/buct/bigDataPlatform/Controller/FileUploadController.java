@@ -23,6 +23,6 @@ public class FileUploadController {
         //保证文件名字唯一
         String filename = UUID.randomUUID().toString() + originalFilename.substring(originalFilename.lastIndexOf("."));
         file.transferTo(new File("C:\\Users\\18050\\Desktop\\files\\" + filename));
-        return Result.OK("url访问地址...");
+        return Result.OK("C:\\Users\\18050\\Desktop\\files\\" + filename);
     }
 }

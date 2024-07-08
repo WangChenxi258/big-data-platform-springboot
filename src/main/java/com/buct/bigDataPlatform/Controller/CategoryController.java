@@ -49,16 +49,16 @@ public class CategoryController {
     }
 
     /**
-     * @param categoryId:
+     * @param id:
      * @Description: delete
      * @Author: CarLor
      * @Date: 11:31 2024/6/12 0012
      * @Param:
      * @return: com.buct.bigDataPlatform.Pojo.Result
      **/
-    @PostMapping("/delete")
-    public Result delete(@RequestParam Integer categoryId) {
-        categoryService.delete(categoryId);
+    @DeleteMapping()
+    public Result delete(@RequestParam Integer id) {
+        categoryService.delete(id);
         return Result.OK();
     }
 
